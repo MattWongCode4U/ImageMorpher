@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Morpher</string>
+    <string name="menuItem1">Image 1</string>
+    <string name="menuItem2">Image 2</string>
+    <string name="deleteAllMenuItem">Delete All Lines</string>
+    <string name="deleteMenuItem">Delete Last Line</string>
+    <string name="drawModeMenuItem">Draw Mode</string>
+    <string name="selectModeMenuItem">Select Mode</string>
+    <string name="editModeMenuItem">Edit Mode</string>
+    <string name="settingsMenuItem">Settings</string>
+</resources>

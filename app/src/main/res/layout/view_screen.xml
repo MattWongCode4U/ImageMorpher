@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/playImageButton"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageViewMorph"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true" />
+    </FrameLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playImageButton"
+        android:src="@android:drawable/ic_media_play"
+        android:layout_alignTop="@+id/prevImageButton"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prevImageButton"
+        android:src="@android:drawable/ic_media_previous"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/playImageButton" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextImageButton"
+        android:src="@android:drawable/ic_media_next"
+        android:layout_alignTop="@+id/playImageButton"
+        android:layout_toEndOf="@+id/playImageButton" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BackButton"
+        android:layout_alignBottom="@+id/nextImageButton"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_menu_revert" />
+</RelativeLayout>

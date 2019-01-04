@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <group android:id="@+id/menuGroup1">
+        <item
+            android:id="@+id/item1MenuItem"
+            android:title="@string/menuItem1"
+            android:icon="@android:drawable/ic_menu_search"
+            app:showAsAction="always|withText"/>
+
+        <item
+            android:id="@+id/item2MenuItem"
+            android:title="@string/menuItem2"
+            android:icon="@android:drawable/ic_menu_search"
+            app:showAsAction="always|withText"/>
+    </group>
+    <group android:id="@+id/menuGroup2" app:showAsAction="ifRoom">
+        <item
+            android:id="@+id/deleteAllMenuItem"
+            android:title="@string/deleteAllMenuItem"
+            android:icon="@android:drawable/ic_menu_delete"
+            app:showAsAction="ifRoom|withText"/>
+        <item
+            android:id="@+id/deleteMenuItem"
+            android:title="@string/deleteMenuItem"
+            android:icon="@android:drawable/ic_menu_close_clear_cancel"
+            app:showAsAction="ifRoom|withText"/>
+    </group>
+    <group android:id="@+id/menuGroup3" android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawMenuItem"
+            android:title="@string/drawModeMenuItem"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:checked="true"
+            android:orderInCategory="1"
+            app:showAsAction="never|withText"/>
+        <item
+            android:id="@+id/editMenuItem"
+            android:title="@string/editModeMenuItem"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:orderInCategory="2"
+            app:showAsAction="never|withText"/>
+    </group>
+    <gorup android:id="@+id/menuGroup4">
+        <item
+            android:id="@+id/settingMenuItem"
+            android:title="@string/settingsMenuItem"
+            app:showAsAction="never|withText"/>
+    </gorup>
+</menu>
